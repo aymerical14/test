@@ -1,0 +1,28 @@
+.capture-overlay {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 5000;
+    transition: opacity 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .capture-text {
+      color: #fff;
+      font-weight: normal;
+      margin-top: 15px;
+    }
+  
+    &.active {
+      pointer-events: all;
+      opacity: 1;
+    }
+}

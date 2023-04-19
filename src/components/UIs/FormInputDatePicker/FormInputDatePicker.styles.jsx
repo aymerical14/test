@@ -1,0 +1,18 @@
+import styled from "styled-components";
+
+export const InputContainer = styled.div`
+  .react-datepicker-wrapper {
+    width: 100%;
+  }
+  input {
+    height: 40px;
+    background: #fff !important;
+    font-size: 14px;
+    border: 2px solid #eee !important;
+    border-radius: 3px 0 0 3px;
+
+    &:focus {
+      border: 2px solid #eee !important;
+    }
+  }
+`;
